@@ -1,3 +1,35 @@
+HTML /////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="filtro.css">
+  <title>Filtros en JS</title>
+</head>
+
+
+
+<body>
+  <div>
+      <input type="text" placeholder="Seleccioná un color o tipo" class="input"> <!--Se coloca la clase input-->
+      
+      <button id="button">Filtrar</button> <!--Se coloca la clase "button"-->
+
+      <h1>Lista de productos </h1>
+
+      <div id="lista-de-productos"></div>
+  </div>
+
+  <script src="./filtro.js"></script> <!--Se corrige la ubicación del JS-->
+</body>
+</html>
+
+JS ///////////////////////////////////////////////
+
 // Tenemos un li de productos
 
 const productos = [
@@ -66,4 +98,8 @@ botonDeFiltro.onclick = function () {
 const filtrado = (productos = [], texto) => {
   return productos.filter(item => item.tipo.includes(texto) || item.color.includes(texto));
 }
+
+
+
+Comentarios de Julissa a Jesús: /////////////////////
 
